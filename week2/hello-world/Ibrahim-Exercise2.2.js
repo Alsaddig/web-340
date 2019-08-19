@@ -1,30 +1,18 @@
-/*
-;=============================================================
-; Title:  Exercise  2.2
-; Author: Alsaddig Ibrahim
-; Date:   8/ 16/ 2019
-; Description: Displays a formatted FirstName LastName
-===============================================================
+var express = require('express');
 
-*/
-
-
-//Start Coding
-const header = require('../Ibrahim-header.js');
-
-console.log(header.display("Alsaddig", "Ibrahim", "Exercise 2.2"));
-var express = require("express");
-
-var http = require("http");
+var http = require('http');
 
 var app = express();
 
-app.use(function(request, response) {
+app.use(function(req, res) {
 
-   console.log("In comes a request to: " + request.url);
+   console.log('In comes a request to %s', req.url);
 
-   response.end("Hello World");
+   res.end('Hello World\n');
 
+})
+
+http.createServer(app).listen(8080 , function()
+{
+   console.log('Application started on port %s', 8080);
 });
-
-http.createServer(app).listen(8080);
