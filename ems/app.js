@@ -3,8 +3,9 @@ var express = require("express");
 var http = require("http");
 
 var path = require("path");
-
+var mongoose = require("mongoose");
 var logger = require("morgan");
+var Employee = require("./models/employee");
 
 var app = express();
 
@@ -30,6 +31,34 @@ function list(request, response) {
     response.render("list.ejs", { customers });
   
   }
+// mLab connection
+var mongoDB = "<mLab connection string>";
+
+mongoose.connect(mongoDB, {
+
+    useMongoClient: true
+
+});
+
+mongoose.Promise = global.Promise;
+
+var db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "MongoDB connection error: "));
+
+db.once("open", function() {
+
+    console.log("Application connected to mLab MongoDB instance");
+
+});
+// model
+
+var employee = new Employee({
+
+  name: "Alsaddig",
+  name:"Ibrahim"
+
+});
 /* app.get('/li',(req, res) => {
     res.render("employee/addOrEdit");
       });
