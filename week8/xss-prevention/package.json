@@ -1,0 +1,8 @@
+{
+    "name": "xss-prevention",
+    "author": "Alsaddig Ibrahim",
+    "private": true,
+    "dependencies": {
+        "helmet": "^3.21.1"
+    }
+}

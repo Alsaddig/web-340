@@ -1,8 +1,0 @@
-{
-    "name": "models",
-    "author": "Alsaddig Ibrahim",
-    "private": true,
-    "dependencies": {
-        "mongoose": "^5.7.1"
-    }
-}

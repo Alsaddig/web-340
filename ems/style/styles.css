@@ -1,0 +1,241 @@
+
+@font-face{
+    font-family:'rockwell-slab';
+    src:url(fonts/rockwell-slab.woff),
+    url(fonts/rockwell-slab.ttf);
+    
+}
+body{
+font-family:'rockwell-slab',Arial,Helvetic,sans-serif;
+/*background-image: url("../images/b4.jpg");
+background-repeat: no-repeat;
+background-size: auto;*/
+background-color: black;
+}
+
+/* Navigation Section */
+.navbar-nav li {
+    padding-right: 20px;
+  }
+  
+  .nav-link {
+    padding-top: 1.63rem;
+    font-size: 1.2rem !important;
+  }
+  
+  .bg-light {
+    background-color: #EEF4F4 !important;
+  }
+
+
+#container{
+width:960px;
+margin:0 auto;
+background-color: white;
+
+}
+header{
+width:960px;
+}
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+nav
+{
+width:950px;
+background-color:blue;
+padding:5px;
+color:white;
+}
+
+nav ul{
+color:white;
+padding:0px;
+
+
+}
+nav li{
+list-style: none;
+display:inline;
+
+padding:10px;
+
+
+}
+nav a{
+    color:white;
+    
+}
+nav a:link{
+    
+display:inline-block;
+text-decoration:none;
+    
+}
+section
+{
+background-color:lightblue;
+
+}
+article
+{
+
+width:640px;
+padding:10px;
+float:right;
+}
+#option ul{
+list-style-image:url(images/arrow-bullet.jpg);
+
+}
+aside
+{
+
+width:280px;
+padding:10px;
+float:left;
+}
+table a{
+    display:inline-block;
+	text-decoration:none;
+}
+#sample label {
+    display:inline-block;
+    float:left;
+    width:150px;
+
+}
+
+#sample input {
+    width:250px;
+    padding:5px;
+    display:inline-block;
+}
+#sample input[type=radio] {
+    width:auto;
+}
+
+#sample textarea {
+    width:250px;
+    height:150px;
+    padding:5px;
+    font-family: Arial, sans-serif;
+}
+
+.important {
+    color:red;
+}
+
+#sample button {
+    margin-left:150px;
+}
+
+footer
+{
+background-color:blue;
+padding:10px;
+clear:both;
+color:white;
+}
+h1{
+color:blue;
+}
+h3{
+    color:blue;
+    }
+    .surveyElement{
+ 
+        font-family: "Bubblegum Sans";
+        padding: 35px;
+        font-size: 1em;
+    
+    }
+    #surveyResult{
+ 
+        font-family: "Bubblegum Sans";
+        padding: 35px;
+        font-size: 1em;
+        color: black;
+    
+    }
+    @media (max-width: 600px) {
+    body{
+        background-color: white;
+
+    }
+    #container{
+    width:auto;
+    
+    }
+    header{
+    width:100%;
+    }
+header img{width:160px;
+height: 150px;}
+    nav{
+    width:auto;
+
+    }
+    center{
+        width: 100%;
+    }
+    nav {
+					
+        margin-right:0px;
+        margin-left:0px;
+        border-top-left-radius:0;
+        border-top-right-radius:0;
+    }
+    nav > li {
+        float: none;
+    }
+    nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    nav li li a {
+    display: block;
+    background: white;
+    position: relative;
+    z-index:100;
+    
+        }
+     nav ul {
+        display: block;
+        width: 100%;
+    }
+    nav a:link
+    {
+        display:block;
+        
+        border-bottom:1px solid black;
+        
+    }
+    section{
+    width:auto;
+
+    }
+    article{
+    width:auto;
+    float:none;
+
+    }
+    aside{
+    width:auto;
+    float:none;
+    
+
+    }
+    footer{
+    width:100%;
+clear: both;
+    }
+    
+}

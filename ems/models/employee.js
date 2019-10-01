@@ -12,25 +12,18 @@ const header = require('../Ibrahim-header.js');
 
 console.log(header.display("Alsaddig", "Ibrahim", "Assignment 7.4"));
 
-// required
+// start program
 
-var mongoose = require("mongoose");
+// Require statements
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var Schema = mongoose.Schema;
-
-// define the EmployeeSchema
-
-var EmployeeSchema = new Schema({
-
-   name: String,
-    name:String
-
+// Employee Schema with first and last name
+let EmployeeSchema = new Schema({
+  firstName: {type: String, required: true },
+  lastName: {type: String, required: true }
 });
-// define the Employee model
+// Export the model using the Schema.
+module.exports = mongoose.model('Employee', EmployeeSchema);
 
-var Employee = mongoose.model("Employee", employeeSchema);
-
-// expose the Employee to calling files
-
-module.exports = Employee;
-//end code
+// end program

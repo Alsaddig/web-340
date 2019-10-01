@@ -1,15 +1,47 @@
-<% include header %>
-<div role="main" class="container">
-<% include navbar %>
+<!DOCTYPE html>
+<html lang="en">
+  <% include header %>
+  <body>
+    <% include navbar %>
+    <main role="main">
+        <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">List</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">View a list of detailed Employees</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Add New</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Add a new employee</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">View</h3>
+              </div>
+              <div class="card-body">
+                <p class="card-text">View Employee Details</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <% include footer %>
 
-    <br/><br/>
-
-    <h2>Welcome to the <%= title %>!</h2>
-
-
-<% include list %>
-<% include footer %>
-</div>
-
-<% include scripts %>
+    </main>
+    <% include scripts %>
+  </body>
+</html>
