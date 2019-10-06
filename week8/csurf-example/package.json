@@ -1,0 +1,9 @@
+{
+    "name": "csurf-example",
+    "author": "Alsaddig Ibrahim",
+    "private": true,
+    "dependencies": {
+        "cookie-parser": "^1.4.4",
+        "csurf": "^1.10.0"
+    }
+}

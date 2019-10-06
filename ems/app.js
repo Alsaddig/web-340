@@ -22,13 +22,13 @@ var csrfProtection = csrf({cookie: true});
 var Employee = require("./models/employee");
 
 // connection to ems database
-var mongoDB = "mongodb+srv://admin:b3ll3vu3@buwebdev-cluster-1-ivaeg.mongodb.net/ems?retryWrites=true&w=majority";
-
+var mongoDB = "mongodb+srv://admin:<password>@cluster0-0bzrk.gcp.mongodb.net/admin?retryWrites=true&w=majority";
 // Express App
 var app = express();
 
 // Call to connect to database.
 mongoose.connect(mongoDB, {
+  useMongoClient: true
 });
 
 // Set global promise
